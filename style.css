@@ -1,0 +1,78 @@
+body {
+    background-image: url("file:///C:/Users/webdev/Downloads/cool-background.png");
+}
+.gold {
+    color:gold;
+}
+.nav-link {
+    color:gold; 
+    font-weight:bolder;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.jumbotron {
+    background-color: transparent;
+}
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+.scrolling-text-container {
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%; 
+}
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+.scrolling-text {
+    display: flex;
+}
+.scrolling-text-item {
+    padding: 0 30px;
+    size: 50px;
+}
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(150%);
+    }
+}
+h1 .text {
+    color:gold
+}
+table {
+    page-break-after: always;
+}
+th {
+    font-size:20px;
+}
+p {
+    font-size:20px;
+}
